@@ -1,0 +1,4 @@
+github.com/mattn/go-sqlite3 v1.14.24 h1:tpSp2G2KyMnnQu99ngJ47EIkWVmliIizyZBfPrBWDRM=
+github.com/mattn/go-sqlite3 v1.14.24/go.mod h1:Uh1q+B4BYcTPb+yiD3kU8Ct7aC0hY9fxUwlHK0RXw+Y=
+github.com/npcnixel/genanki-go v0.0.0-20250319170158-c599b727a113 h1:kIbFATTVsrTneFmO9k9bch1uiyGJz1WRm/Cay4OG6/M=
+github.com/npcnixel/genanki-go v0.0.0-20250319170158-c599b727a113/go.mod h1:W1FEWpdtv1QOKhnSMvYQmyqqmCnlXr6HsAxVW060zvA=
