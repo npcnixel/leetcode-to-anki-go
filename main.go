@@ -1,51 +1,42 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
 	"path/filepath"
 
-	"github.com/npcnixel/genanki-go"
+	"github.com/npcnixel/leetcode-to-anki-go/pkg/anki_deck"
+	"github.com/npcnixel/leetcode-to-anki-go/pkg/leetcode_parser"
 )
 
 func main() {
-	// Create a basic model with auto-generated ID using convenience function
-	basicModel := genanki.StandardBasicModel("Basic")
+	debug := flag.Bool("debug", false, "Show raw HTML/CSS when creating decks")
+	flag.Parse()
 
-	// Create a new deck with auto-generated ID using convenience function
-	deck := genanki.StandardDeck("Test Deck", "A test deck")
-
-	// Print the generated IDs for reference
-	fmt.Printf("Generated Basic Model ID: %d\n", basicModel.ID)
-	fmt.Printf("Generated Deck ID: %d\n", deck.ID)
-
-	// Create a note
-	note := genanki.NewNote(
-		basicModel.ID,
-		[]string{"What is 2+2?", "4"},
-		[]string{"math", "basic"},
-	)
-
-	// Add note to the deck using chaining
-	deck.AddNote(note)
-
-	// Create a package with the deck using chaining
-	pkg := genanki.NewPackage([]*genanki.Deck{deck}).AddModel(basicModel.Model)
-
-	// Ensure output directory exists at same level as example directories
-	outputDir := filepath.Join("..", "output")
-	if err := os.MkdirAll(outputDir, 0755); err != nil {
-		log.Fatalf("Failed to create output directory: %v", err)
+	currentDir, err := os.Getwd()
+	if err != nil {
+		log.Fatalf("Failed to get current directory: %v", err)
 	}
 
-	// Write package to file in the output directory
-	outputPath := filepath.Join(outputDir, "basic_deck.apkg")
-	if err := pkg.WriteToFile(outputPath); err != nil {
-		log.Fatalf("Failed to write package: %v", err)
+	inputDir := filepath.Join(currentDir, "input")
+	outputDir := filepath.Join(currentDir, "output")
+
+	problems, err := leetcode_parser.ParseDirectory(inputDir, *debug)
+	if err != nil {
+		log.Fatalf("Failed to parse HTML files: %v", err)
 	}
 
-	// Print summary information
-	fmt.Printf("Successfully created Anki deck: %s\n", outputPath)
-	fmt.Printf("Number of notes: %d\n", len(deck.Notes))
+	if len(problems) == 0 {
+		log.Println("No HTML files found in the input directory")
+		return
+	}
+
+	if err := anki_deck.CreateDeck(problems, outputDir, *debug); err != nil {
+		log.Fatalf("Failed to create Anki deck: %v", err)
+	}
+
+	fmt.Printf("Successfully processed %d problems\n", len(problems))
+	fmt.Printf("Anki deck created in: %s\n", filepath.Join(outputDir, "leetcode_deck.apkg"))
 }
