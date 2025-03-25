@@ -136,7 +136,7 @@ go run main.go
    - Existing problems are not duplicated
    - Your existing collection remains intact
 6. **Debugging Support**: With the `-debug` flag, detailed logs show exactly what's being extracted and how it's being processed
-7. Uses [genanki-go](https://github.com/npcnixel/genanki-go) library to generate notes, deck, package and so on.
+7. Heavily relies on [genanki-go](https://github.com/npcnixel/genanki-go) library for generating notes, decks, package and so on.
 </details>
 
 ## TODO:
