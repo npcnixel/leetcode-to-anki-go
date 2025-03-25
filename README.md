@@ -94,11 +94,11 @@ Follow these steps to create Anki flashcards from your LeetCode solutions:
 
 ### Step 2: Prepare Input Files
 
-Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
+   - Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
 
 ### Step 3: Generate Anki Package
 
-Run the application from the command line:
+   - Run the application from the command line:
 
 ```
 go run main.go
