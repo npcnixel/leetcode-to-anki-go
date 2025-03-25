@@ -20,16 +20,7 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 Choose one of the following installation methods:
 
-### Option 1: Docker (recommended for Windows users)
-
-The easiest way to run the application, especially on Windows:
-
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-2. Follow the [Docker instructions](#using-docker-recommended-for-windows-users) below
-
-### Option 2: Native Installation
-
-To run without Docker:
+### Option 1: Native Installation
 
 #### Prerequisites
 
@@ -48,6 +39,13 @@ To run without Docker:
    ```
    go run main.go 
    ```
+
+### Option 2: Docker (recommended for Windows users)
+
+The easiest way to run the application, especially on Windows:
+
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Expand the collapsible **"Using Docker"** section below for detailed instructions
 
 ## Usage
 
