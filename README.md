@@ -18,8 +18,6 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 ## Installation
 
-Choose one of the following installation methods:
-
 ### Option 1: Native Installation
 
 #### Prerequisites
@@ -42,12 +40,6 @@ Choose one of the following installation methods:
 
 ### Option 2: Docker (recommended for Windows users)
 
-The easiest way to run the application, especially on Windows:
-
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-2. Expand the collapsible **"Using Docker"** section below for detailed instructions
-
-## Usage
 
 <details>
 <summary><b>Using Docker (recommended for Windows users)</b> - Click to expand</summary>
@@ -91,6 +83,8 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 Note: Docker handles cross-platform compatibility issues automatically, making this approach particularly useful for Windows users.
 </details>
+
+## Usage
 
 ### Saving LeetCode Pages
 
