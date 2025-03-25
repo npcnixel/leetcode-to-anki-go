@@ -108,19 +108,20 @@ Run the application:
 go run main.go
 ```
 
-#### Command Line Options
+To enable detailed debugging output:
+```
+go run main.go -debug
+```
 
-- `-debug`: Enable detailed debugging output
-  ```
-  go run main.go -debug
-  ```
+<details>
+<summary><b>How It Works</b> - Click to expand</summary>
 
-## Directory Structure
+### Directory Structure
 
 - `input/`: Place saved LeetCode HTML files here
 - `output/`: Generated Anki package will be saved here
 
-## How It Works
+### Process
 
 1. **HTML Parsing**: The application scans the `input` directory and parses all HTML files
 2. **Content Extraction**: For each file, it extracts:
@@ -138,6 +139,7 @@ go run main.go
    - Your existing collection remains intact
 6. **Debugging Support**: With the `-debug` flag, detailed logs show exactly what's being extracted and how it's being processed
 7. Uses [genanki-go](https://github.com/npcnixel/genanki-go) library to generate notes, deck, package and so on.
+</details>
 
 ## TODO:
 * More tests
