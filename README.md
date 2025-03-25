@@ -18,14 +18,12 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 ## Installation
 
-### Option 1: Native Installation
+### Option 1: Installing from source 
 
 #### Prerequisites
 
 - Go 1.19 or higher (fully compatible with Go 1.24.1)
 - Anki (to import the generated deck)
-
-#### Installing from source
 
 1. Clone this repository:
    ```
@@ -81,7 +79,6 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 5. The output will be available in the `output` directory, just as with the local installation
 
-Note: Docker handles cross-platform compatibility issues automatically, making this approach particularly useful for Windows users.
 </details>
 
 ## Usage
@@ -90,8 +87,8 @@ Note: Docker handles cross-platform compatibility issues automatically, making t
 
 1. Solve problems on LeetCode
 2. **Save the complete page**: 
-   - LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture the code
-   You may use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered HTML page including dynamically loaded content
+   - LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture the code.
+   Hence, You may use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered HTML page including dynamically loaded content
 3. Place the saved HTML files in the `input` directory
 
 ### Generating Anki Cards
@@ -100,11 +97,6 @@ Run the application:
 
 ```
 go run main.go
-```
-
-To enable detailed debugging output:
-```
-go run main.go -debug
 ```
 
 <details>
@@ -137,6 +129,9 @@ go run main.go -debug
 
 ## TODO:
 * More tests
+* Include pictures
+* Include message if input is empty
+* Include message if something went wrong
 * Experiment with style
 
 ## Contributing

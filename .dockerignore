@@ -1,0 +1,22 @@
+# Test directories
+tests/
+**/tests/
+*_test.go
+
+# Git files
+.git/
+.gitignore
+
+# IDE files
+.idea/
+.vscode/
+
+# Output directory (since we'll mount this)
+output/
+
+# macOS system files
+.DS_Store
+
+# Docker files (to prevent recursive inclusion)
+Dockerfile
+.dockerignore 
