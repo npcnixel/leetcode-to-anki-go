@@ -1,7 +1,7 @@
 ## Overview
 **leetcode-to-anki-go** transforms solved LeetCode problems into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**.
 
-By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
+By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your personal solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
 
 ## Features
 
