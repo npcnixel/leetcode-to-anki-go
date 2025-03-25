@@ -89,10 +89,7 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 Follow these steps to create Anki flashcards from your LeetCode solutions:
 
-### Step 1: Solve and Save LeetCode Problems
-
-1. Solve problems on LeetCode
-2. **Save the complete page**: 
+### Step 1: Solve LeetCode Problem and **Save the complete page**: 
    - LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content
    - Use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content
    - Make sure your solution code is visible in the saved HTML file
