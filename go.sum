@@ -1,8 +1,10 @@
 github.com/mattn/go-sqlite3 v1.14.24 h1:tpSp2G2KyMnnQu99ngJ47EIkWVmliIizyZBfPrBWDRM=
 github.com/mattn/go-sqlite3 v1.14.24/go.mod h1:Uh1q+B4BYcTPb+yiD3kU8Ct7aC0hY9fxUwlHK0RXw+Y=
-github.com/npcnixel/genanki-go v0.0.0-20250319170158-c599b727a113 h1:kIbFATTVsrTneFmO9k9bch1uiyGJz1WRm/Cay4OG6/M=
-github.com/npcnixel/genanki-go v0.0.0-20250319170158-c599b727a113/go.mod h1:W1FEWpdtv1QOKhnSMvYQmyqqmCnlXr6HsAxVW060zvA=
 github.com/npcnixel/genanki-go v0.0.0-20250324165932-cc91374c992d h1:vr2yb8AkcG8kDHSK8FDt0qa8/drD+vsqt1X5f4eCm/U=
 github.com/npcnixel/genanki-go v0.0.0-20250324165932-cc91374c992d/go.mod h1:W1FEWpdtv1QOKhnSMvYQmyqqmCnlXr6HsAxVW060zvA=
+github.com/npcnixel/genanki-go v0.0.0-20250325193428-ac876772e261 h1:rhAzdRfTUXkJQoBX2fAjtrDnnF94/1K/ErgqHrdHEzI=
+github.com/npcnixel/genanki-go v0.0.0-20250325193428-ac876772e261/go.mod h1:W1FEWpdtv1QOKhnSMvYQmyqqmCnlXr6HsAxVW060zvA=
 golang.org/x/net v0.22.0 h1:9sGLhx7iRIHEiX0oAJ3MRZMUCElJgy7Br1nO+AMN3Tc=
 golang.org/x/net v0.22.0/go.mod h1:JKghWKKOSdJwpW2GEx0Ja7fmaKnMsbu+MWVZTokSYmg=
+golang.org/x/net v0.37.0 h1:1zLorHbz+LYj7MQlSf1+2tPIIgibq2eL5xkrGk6f+2c=
+golang.org/x/net v0.37.0/go.mod h1:ivrbrMbzFq5J41QOQh0siUuly180yBYtLp+CKbEaFx8=
