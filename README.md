@@ -38,6 +38,10 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 ### Option 2: Docker (recommended for Windows users)
 
+The easiest way to run the application, especially on Windows:
+
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Expand the collapsible **"Using Docker"** section below for detailed instructions
 
 <details>
 <summary><b>Using Docker (recommended for Windows users)</b> - Click to expand</summary>
@@ -83,21 +87,34 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 ## Usage
 
-### Saving LeetCode Pages
+Follow these steps to create Anki flashcards from your LeetCode solutions:
+
+### Step 1: Solve and Save LeetCode Problems
 
 1. Solve problems on LeetCode
 2. **Save the complete page**: 
-   - LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture the code.
-   Hence, You may use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered HTML page including dynamically loaded content
-3. Place the saved HTML files in the `input` directory
+   - LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content
+   - Use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content
+   - Make sure your solution code is visible in the saved HTML file
 
-### Generating Anki Cards
+### Step 2: Prepare Input Files
 
-Run the application:
+Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
+
+### Step 3: Generate Anki Package
+
+Run the application from the command line:
 
 ```
 go run main.go
 ```
+
+### Step 4: Import into Anki
+
+1. Locate the generated `.apkg` file in the `output` directory
+2. Open Anki and select "File > Import" (or press Ctrl+Shift+I / Cmd+Shift+I)
+3. Select the `.apkg` file and click "Open"
+4. The cards will be added to your Anki collection
 
 <details>
 <summary><b>How It Works</b> - Click to expand</summary>
