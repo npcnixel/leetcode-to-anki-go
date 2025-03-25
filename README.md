@@ -143,7 +143,6 @@ go run main.go
 * More tests
 * Include pictures
 * Include message if input is empty
-* Include message if something went wrong
 * Experiment with style
 
 ## Contributing

@@ -462,7 +462,7 @@ func extractPythonCode(htmlContent string) string {
 
 	// Return a default Python template if all extraction methods fail
 	debugLog("Failed to extract code using all methods, returning default template")
-	return "class Solution:\n    def method(self, param):\n        # code here\n        pass"
+	return "If you see this, let me know at https://github.com/npcnixel/leetcode-to-anki-go/issues/new"
 }
 
 // Helper function to clean up code lines extracted from Monaco editor
@@ -484,14 +484,6 @@ func cleanCodeLine(line string) string {
 	}
 
 	return result.String()
-}
-
-// Helper function for min
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }
 
 // Helper function to extract attributes from HTML nodes
@@ -633,32 +625,6 @@ func extractTextFromNode(n *nethtml.Node) string {
 	content = strings.TrimSpace(content)
 
 	return content
-}
-
-// Helper function to clean title
-func cleanTitle(title string) string {
-	title = strings.ReplaceAll(title, "Can you solve this real interview question? ", "")
-	title = strings.ReplaceAll(title, "LeetCode -", "")
-	if idx := strings.Index(title, " - "); idx > 0 {
-		title = title[:idx]
-	}
-	return strings.TrimSpace(title)
-}
-
-// Extract text content from a node and its children
-func extractText(n *nethtml.Node) string {
-	var sb strings.Builder
-	var extract func(*nethtml.Node)
-	extract = func(node *nethtml.Node) {
-		if node.Type == nethtml.TextNode {
-			sb.WriteString(node.Data)
-		}
-		for child := node.FirstChild; child != nil; child = child.NextSibling {
-			extract(child)
-		}
-	}
-	extract(n)
-	return sb.String()
 }
 
 // Function to reorganize Python code for better flow
