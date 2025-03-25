@@ -38,11 +38,6 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 ### Option 2: Docker (recommended for Windows users)
 
-The easiest way to run the application, especially on Windows:
-
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-2. Expand the collapsible **"Using Docker"** section below for detailed instructions
-
 <details>
 <summary><b>Using Docker (recommended for Windows users)</b> - Click to expand</summary>
 
