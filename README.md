@@ -18,9 +18,6 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 ## Installation
 
-- Go 1.19 or higher (fully compatible with Go 1.24.1)
-- Anki (to import the generated deck)
-
 1. Clone this repository:
    ```
    git clone https://github.com/npcnixel/leetcode-to-anki-go.git
