@@ -75,8 +75,6 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 ## Usage
 
-Follow these steps to create Anki flashcards from your LeetCode solutions:
-
 ### Step 1: Solve LeetCode Problem and **Save the complete page**: 
    - LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. Hence, use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content
 
@@ -94,10 +92,16 @@ go run main.go
 
 ### Step 4: Import into Anki
 
+<details>
+<summary><b>Step 4: Import into Anki</b> - Click to expand</summary>
+
 1. Locate the generated `.apkg` file in the `output` directory
 2. Open Anki and select "File > Import" (or press Ctrl+Shift+I / Cmd+Shift+I)
 3. Select the `.apkg` file and click "Open"
 4. The cards will be added to your Anki collection
+
+Note: Only new problems will be added as cards. If you've previously imported some problems, they won't be duplicated.
+</details>
 
 <details>
 <summary><b>How It Works</b> - Click to expand</summary>
