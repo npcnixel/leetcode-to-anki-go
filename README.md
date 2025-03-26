@@ -132,7 +132,6 @@ Note: Only new problems will be added as cards. If you've previously imported so
 ## TODO:
 * More tests
 * Include pictures
-* Include message if input is empty
 * Experiment with style
 
 ## Contributing
