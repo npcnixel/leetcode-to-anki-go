@@ -18,10 +18,6 @@ By converting HTML pages of completed problems into structured flashcards with t
 
 ## Installation
 
-### Option 1: Installing from source 
-
-#### Prerequisites
-
 - Go 1.19 or higher (fully compatible with Go 1.24.1)
 - Anki (to import the generated deck)
 
