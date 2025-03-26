@@ -133,6 +133,7 @@ Note: Only new problems will be added as cards. If you've previously imported so
 * More tests
 * Include pictures
 * Experiment with style
+* Review and test Dockerfile
 
 ## Contributing
 
