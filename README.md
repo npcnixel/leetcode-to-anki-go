@@ -64,14 +64,11 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 ## Usage
 
-### Step 1: Solve LeetCode Problem and **Save the complete page**: 
-LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. Hence, use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content
+1. LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. Hence, use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content
 
-### Step 2: Prepare Input Files
-Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
+2. Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
 
-### Step 3: Generate Anki Package
-Run the application from the command line:
+3. Run the application from the command line:
 
 ```
 go run main.go
