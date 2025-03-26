@@ -118,11 +118,8 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 ```
 go run main.go
 ```
-
-### Step 4: Import into Anki
-
 <details>
-<summary><b>Step 4: Import into Anki</b> - Click to expand</summary>
+<summary><h3>Step 4: Import into Anki</h3> - Click to expand</summary>
 
 1. Locate the generated `.apkg` file in the `output` directory
 2. Open Anki and select "File > Import" (or press Ctrl+Shift+I / Cmd+Shift+I)
