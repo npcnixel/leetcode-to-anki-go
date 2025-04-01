@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 
 	"github.com/npcnixel/leetcode-to-anki-go/pkg/anki_deck"
-	"github.com/npcnixel/leetcode-to-anki-go/pkg/leetcode_parser"
+	"github.com/npcnixel/leetcode-to-anki-go/pkg/leetcode_to_anki"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	inputDir := filepath.Join(currentDir, "input")
 	outputDir := filepath.Join(currentDir, "output")
 
-	problems, err := leetcode_parser.ParseDirectory(inputDir, *debug)
+	problems, err := leetcode_to_anki.ParseDirectory(inputDir, *debug)
 	if err != nil {
 		log.Fatalf("Failed to parse HTML files: %v", err)
 	}

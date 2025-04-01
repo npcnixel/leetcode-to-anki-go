@@ -11,55 +11,56 @@ import (
 	"strings"
 	"testing"
 
+	"html"
+
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/npcnixel/leetcode-to-anki-go/pkg/anki_deck"
-	"github.com/npcnixel/leetcode-to-anki-go/pkg/leetcode_parser"
+	"github.com/npcnixel/leetcode-to-anki-go/pkg/leetcode_to_anki"
 )
 
 // Expected code constants for validation
 const expectedStockCode = `class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        #profit = 0
-        # Simply add up all price increases
-        #for i in range(1, len(prices)):
-        #   if prices[i] > prices[i-1]:
-        #       profit += prices[i] - prices[i-1]
-        #return profit
         if not prices or len(prices) == 1:
             return 0
+            
         total_profit = 0
         left = 0  # Buy position
+        
         for end in range(1, len(prices)):
-            # If we find a price drop, we should sell before it (if profitable)
             if prices[end] < prices[end - 1]:
-                # Sell at the previous position if we can make a profit
                 if prices[end - 1] > prices[left]:
                     total_profit += prices[end - 1] - prices[left]
-                # Reset buy position to current day
                 left = end
-        # Check if we need to sell at the last position
+        
         if prices[-1] > prices[left]:
             total_profit += prices[-1] - prices[left]
+            
         return total_profit`
 
 const expectedRainWaterCode = `class Solution:
     def trap(self, height: List[int]) -> int:
         mh = max(height)
         block_vol = sum(height)
+
         left = 0
         max_left = 0
         while height[left] < mh:
             if height[left] > max_left:
                 max_left = height[left]
+            
             height[left] = max_left
             left += 1
+        
         right = len(height)-1
         max_right = 0
         while height[right] < mh:
             if height[right] > max_right:
                 max_right = height[right]
+            
             height[right] = max_right
             right -= 1
+
         filled_vol = sum(height[0:left]+height[right:]) + (right-left)*mh
         return filled_vol - block_vol`
 
@@ -103,7 +104,7 @@ func TestIntegratedAnkiPackage(t *testing.T) {
 	}
 
 	// Parse HTML files
-	problems, err := leetcode_parser.ParseDirectory(inputDir, true)
+	problems, err := leetcode_to_anki.ParseDirectory(inputDir, true)
 	if err != nil {
 		t.Fatalf("Failed to parse HTML files: %v", err)
 	}
@@ -272,7 +273,7 @@ func verifyAnkiPackageContents(t *testing.T, packagePath, extractDir string, exp
 				expectedCode := expectedCodeMap[title]
 
 				// Normalize for comparison
-				normalizedExtracted := normalizeCode(extractedCode)
+				normalizedExtracted := normalizeCode(html.UnescapeString(extractedCode))
 				normalizedExpected := normalizeCode(expectedCode)
 
 				// Check if the code matches the expected code
