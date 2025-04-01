@@ -95,18 +95,17 @@ Note: Only new problems will be added as cards. If you've previously imported so
 
 <details>
 <summary><b>How It Works</b> - Click to expand</summary>
-
-### Directory Structure
-
-- `input/`: Place saved LeetCode HTML files here
-- `output/`: Generated Anki package will be saved here
-
-## How It Works
+### How It Works
 
 1. Parses the saved HTML files to extract problem titles, descriptions, and your solutions
 2. Formats the content with proper styling for readability
 3. Creates an Anki deck with cards that have the problem on the front and your solution on the back
 4. Packages everything into a standard Anki package (`.apkg`) format
+
+### Directory Structure
+
+- `input/`: Place saved LeetCode HTML files here
+- `output/`: Generated Anki package will be saved here
 </details>
 
 
