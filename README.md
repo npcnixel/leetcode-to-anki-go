@@ -88,7 +88,6 @@ Note: Only new problems will be added as cards. If you've previously imported so
 ## Features
 
 - **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
-- **Personalized Learning**: Captures your unique solution approaches with original comments and code style
 - **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
 - **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
 - **Incremental Updates**: Adding new problems and importing .apkg only creates cards that didn't exist in previously imported Anki collection
