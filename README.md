@@ -94,6 +94,7 @@ Note: Only new problems will be added as cards. If you've previously imported so
 </details>
 
 <details>
+
 <summary><b>How It Works</b> - Click to expand</summary>
 ### How It Works
 
