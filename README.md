@@ -96,7 +96,6 @@ Note: Only new problems will be added as cards. If you've previously imported so
 <details>
 
 <summary><b>How It Works</b> - Click to expand</summary>
-### How It Works
 
 1. Parses the saved HTML files to extract problem titles, descriptions, and your solutions
 2. Formats the content with proper styling for readability
