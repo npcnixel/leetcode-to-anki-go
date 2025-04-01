@@ -84,7 +84,7 @@ Note: Only new problems will be added as cards. If you've previously imported so
 </details>
 
 ## genanki-go
-This tool heavily relies on [genanki-go](https://github.com/npcnixel/genanki-go) for comprehensive ANKI deck construction, complete customization and professional flashcard generation with enabling full control over deck structure and formatting.
+This tool heavily relies on [genanki-go](https://github.com/npcnixel/genanki-go) for comprehensive ANKI deck construction, complete customization and professional flashcard generation in Go with full control over deck structure and formatting.
 
 ## Features
 
