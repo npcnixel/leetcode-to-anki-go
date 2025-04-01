@@ -5,8 +5,11 @@
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your personal solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 ## Features
@@ -19,6 +22,9 @@ By converting HTML pages of completed problems into structured flashcards with t
 - **Beautiful Formatting**: Dark-themed cards with proper syntax highlighting for better readability
 - **Debug Mode**: Detailed logging with `-debug` flag to troubleshoot extraction issues
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -140,6 +146,7 @@ Note: Only new problems will be added as cards. If you've previously imported so
 6. **Debugging Support**: With the `-debug` flag, detailed logs show exactly what's being extracted and how it's being processed
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 7. Heavily relies on [genanki-go](https://github.com/npcnixel/genanki-go) library for generating notes, decks, package and so on.
 </details>
 
@@ -151,12 +158,17 @@ Note: Only new problems will be added as cards. If you've previously imported so
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 ## TODO:
 * More tests
 * Add .dockerfile
 * Experiment with style
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -169,7 +181,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 This project is licensed under the MIT License - see the LICENSE file for details.
+=======
+This project is licensed under the MIT License - see the LICENSE file for details.
+>>>>>>> Stashed changes
 =======
 This project is licensed under the MIT License - see the LICENSE file for details.
 >>>>>>> Stashed changes
