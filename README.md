@@ -2,12 +2,12 @@
 
 ## Overview
 
-LeetCode-to-Anki transforms solved LeetCode problems into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**. Unlike generic solution memorization, this tool preserves the exact way *you* tackle each problem—your thought process, coding patterns, and implementation choices. By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
+LeetCode-to-Anki transforms solved LeetCode problems into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**.
+By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
 
 ## Features
 
 - **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
-- **Personalized Learning**: Captures your unique solution approaches with original comments and code style
 - **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
 - **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
 - **Incremental Updates**: Adding new problems only creates cards for content not already in your Anki collection
