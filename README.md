@@ -4,15 +4,6 @@ Transform your solved LeetCode problems into personalized Anki flashcards, delib
 
 By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
 
-## Features
-
-- **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
-- **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
-- **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
-- **Incremental Updates**: Adding new problems only creates cards for content not already in your Anki collection
-- **Beautiful Formatting**: Dark-themed cards with proper syntax highlighting for better readability
-- **Debug Mode**: Detailed logging with `-debug` flag to troubleshoot extraction issues
-
 ## Installation
 
 1. Clone this repository:
@@ -72,7 +63,7 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 ## Usage
 
-1. LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. Hence, ‼️ use a browser extension like  [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content ‼️
+1. LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. ‼️ Use a browser extension like  [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content ‼️
 
 2. Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
 
@@ -91,6 +82,16 @@ go run main.go
 
 Note: Only new problems will be added as cards. If you've previously imported some problems, they won't be duplicated.
 </details>
+
+
+## Features
+
+- **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
+- **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
+- **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
+- **Incremental Updates**: Adding new problems only creates cards for content not already in your Anki collection
+- **Beautiful Formatting**: Dark-themed cards with proper syntax highlighting for better readability
+- **Debug Mode**: Detailed logging with `-debug` flag to troubleshoot extraction issues
 
 <details>
 
