@@ -72,7 +72,7 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 ## Usage
 
-1. LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. Hence, use a browser extension like [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content
+1. LeetCode uses GraphQL which means standard browser "Save as" (Ctrl+S/Cmd+S) might not capture all content. Hence, ‼️ use a browser extension like  [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle) to capture the fully rendered page with all content ‼️
 
 2. Place all saved HTML files in the `input` directory. You may add multiple problems at once for batch processing.
 
