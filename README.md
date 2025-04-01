@@ -93,17 +93,6 @@ go run main.go
 Note: Only new problems will be added as cards. If you've previously imported some problems, they won't be duplicated.
 </details>
 
-
-## Features
-
-- **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
-- **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
-- **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
-- **Incremental Updates**: Adding new problems and importing .apkg only creates cards that didn't exist in previously imported Anki collection
-- **Beautiful Formatting**: Dark-themed cards with proper syntax highlighting for better readability
-- **Debug Mode**: Detailed logging with `-debug` flag to troubleshoot extraction issues
-- **Cross-platform**: You can use Dockerfile for Windows
-
 <details>
 <summary><b>How It Works</b> - Click to expand</summary>
 
@@ -118,6 +107,8 @@ Note: Only new problems will be added as cards. If you've previously imported so
 2. Formats the content with proper styling for readability
 3. Creates an Anki deck with cards that have the problem on the front and your solution on the back
 4. Packages everything into a standard Anki package (`.apkg`) format
+</details>
+
 
 ## Contributing
 
@@ -126,8 +117,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-TODO:
-* More tests
-* Add .dockerfile
-* Experiment with style
