@@ -3,7 +3,25 @@
 ## Overview
 **leetcode-to-anki-go** transforms solved LeetCode problems into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**.
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your personal solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
+=======
+=======
+>>>>>>> Stashed changes
+## Features
+
+- **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
+- **Personalized Learning**: Captures your unique solution approaches with original comments and code style
+- **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
+- **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
+- **Incremental Updates**: Adding new problems only creates cards for content not already in your Anki collection
+- **Beautiful Formatting**: Dark-themed cards with proper syntax highlighting for better readability
+- **Debug Mode**: Detailed logging with `-debug` flag to troubleshoot extraction issues
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 ## Installation
 
@@ -88,7 +106,6 @@ Note: Only new problems will be added as cards. If you've previously imported so
 ## Features
 
 - **Complete HTML to Anki Conversion**: Transforms saved LeetCode pages into ready-to-import Anki packages
-- **Personalized Learning**: Captures your unique solution approaches with original comments and code style
 - **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
 - **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
 - **Incremental Updates**: Adding new problems and importing .apkg only creates cards that didn't exist in previously imported Anki collection
@@ -121,6 +138,8 @@ Note: Only new problems will be added as cards. If you've previously imported so
    - Existing problems are not duplicated
    - Your existing collection remains intact
 6. **Debugging Support**: With the `-debug` flag, detailed logs show exactly what's being extracted and how it's being processed
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 7. Heavily relies on [genanki-go](https://github.com/npcnixel/genanki-go) library for generating notes, decks, package and so on.
 </details>
 
@@ -129,6 +148,18 @@ Note: Only new problems will be added as cards. If you've previously imported so
 * Include pictures
 * Experiment with style
 * Review and test Dockerfile
+=======
+=======
+>>>>>>> Stashed changes
+
+## TODO:
+* More tests
+* Add .dockerfile
+* Experiment with style
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 ## Contributing
 
@@ -136,4 +167,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 This project is licensed under the MIT License - see the LICENSE file for details.
+=======
+This project is licensed under the MIT License - see the LICENSE file for details.
+>>>>>>> Stashed changes
+=======
+This project is licensed under the MIT License - see the LICENSE file for details.
+>>>>>>> Stashed changes
