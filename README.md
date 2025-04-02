@@ -48,11 +48,6 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
    docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" leetcode-to-anki-go
    ```
 
-   To run with debug mode, add the `-debug` flag:
-   ```
-   docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" leetcode-to-anki-go -debug
-   ```
-
 5. The output will be available in the `output` directory, just as with the local installation
 
 </details>
