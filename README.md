@@ -33,30 +33,24 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
    git clone https://github.com/npcnixel/leetcode-to-anki-go.git
    cd leetcode-to-anki-go
    ```
-
 3. Build the Docker image:
    ```
-   docker build -t leetcode-to-anki .
+   docker build -t leetcode-to-anki-go .
    ```
 
 4. Run the container:
    ```
-   docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" leetcode-to-anki
-   ```
+   docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" leetcode-to-anki-go
 
-   For Windows CMD:
-   ```
-   docker run --rm -v "%cd%/input:/app/input" -v "%cd%/output:/app/output" leetcode-to-anki
-   ```
-
-   For Windows PowerShell:
-   ```
-   docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" leetcode-to-anki
+   # For Windows CMD:
+   docker run --rm -v "%cd%/input:/app/input" -v "%cd%/output:/app/output" leetcode-to-anki-go
+   # For Windows PowerShell:
+   docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" leetcode-to-anki-go
    ```
 
    To run with debug mode, add the `-debug` flag:
    ```
-   docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" leetcode-to-anki -debug
+   docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" leetcode-to-anki-go -debug
    ```
 
 5. The output will be available in the `output` directory, just as with the local installation

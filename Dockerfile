@@ -1,5 +1,4 @@
-# Use the official Golang image as a base
-FROM golang:1.24-alpine AS builder
+FROM golang:1.24 AS builder
 
 # Set working directory
 WORKDIR /app
@@ -13,14 +12,16 @@ RUN go mod download
 # Copy source code
 COPY . .
 
-# Build the application
+# Build the application with CGO enabled
+ENV CGO_ENABLED=1
 RUN go build -o leetcode-to-anki-go
 
-# Use a smaller image for the final stage
-FROM alpine:latest
+# Use debian:stable-slim for the runtime image
+FROM debian:stable-slim
 
-# Install necessary runtime dependencies
-RUN apk --no-cache add ca-certificates
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ca-certificates libc6 && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
@@ -40,4 +41,8 @@ VOLUME ["/app/input", "/app/output"]
 ENTRYPOINT ["/app/leetcode-to-anki-go"]
 
 # Default command (can be overridden)
-CMD [] 
+CMD []
+
+# Label with correct project name
+LABEL org.opencontainers.image.title="leetcode-to-anki-go"
+LABEL org.opencontainers.image.description="LeetCode to Anki card converter written in Go" 
