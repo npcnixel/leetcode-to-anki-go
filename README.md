@@ -4,7 +4,7 @@ Transform your solved LeetCode problems into personalized Anki flashcards, delib
 
 By converting HTML pages of completed problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
 
-<img width="1180" alt="SCR-20250402-uanu" src="https://github.com/user-attachments/assets/d189ccbb-f34c-4d0c-b6d9-578b5d43b93d" />
+<img width="1180" alt="SCR-20250402-uanu" src="https://github.com/user-attachments/assets/98cb99f3-a584-4048-9aab-7f1418fc1b57" />
 
 ## Installation
 
