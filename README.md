@@ -19,12 +19,9 @@ By converting HTML pages of completed problems into structured flashcards with t
    go run main.go 
    ```
 
-### Option 2: Docker (recommended for Windows users)
 
 <details>
-<summary><b>Using Docker (recommended for Windows users)</b> - Click to expand</summary>
-
-If you're on Windows or prefer not to install Go locally, you can use Docker instead:
+<summary><b>Option 2: Docker (recommended for Windows users)</b> - Click to expand</summary>
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
@@ -83,7 +80,7 @@ This tool heavily relies on [genanki-go](https://github.com/npcnixel/genanki-go)
 - **Image Preservation**: Maintains diagrams and illustrations from problem descriptions
 - **Batch Processing**: Process multiple problems at once by adding HTML files to the input folder
 - **Incremental Updates**: Adding new problems only creates cards for content not already in your Anki collection
-- **Beautiful Formatting**: Dark-themed cards with proper syntax highlighting for better readability
+- **Formatting**: Cards are adjusted for ANKI's set theme 
 - **Debug Mode**: Detailed logging with `-debug` flag to troubleshoot extraction issues
 
 <details>
