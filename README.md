@@ -28,13 +28,7 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-2. **Important for Windows users**: 
-   - Open Docker Desktop
-   - Go to Settings > Resources > File Sharing
-   - Make sure your working directory's drive is shared/enabled
-   - Use backslashes (`\`) instead of forward slashes in paths
-
-3. Clone this repository:
+2. Clone this repository:
    ```
    git clone https://github.com/npcnixel/leetcode-to-anki-go.git
    cd leetcode-to-anki-go
@@ -49,9 +43,9 @@ If you're on Windows or prefer not to install Go locally, you can use Docker ins
    docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" leetcode-to-anki-go
 
    # For Windows CMD:
-   docker run --rm -v "%cd%\input:/app/input" -v "%cd%\output:/app/output" leetcode-to-anki-go
+   docker run --rm -v "%cd%/input:/app/input" -v "%cd%/output:/app/output" leetcode-to-anki-go
    # For Windows PowerShell:
-   docker run --rm -v "${PWD}\input:/app/input" -v "${PWD}\output:/app/output" leetcode-to-anki-go
+   docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" leetcode-to-anki-go
    ```
 
 5. The output will be available in the `output` directory, just as with the local installation
