@@ -1,6 +1,6 @@
 # leetcode-to-anki-go
 
-## TL;DR
+### TL;DR
 | Save as SingleFile.html | Input Folder | Output Folder |
 |:-----:|:-------:|:------:|
 | **leetcode.com/problem-x** | **SingleFile.html** | **anki_deck.apkg** |
