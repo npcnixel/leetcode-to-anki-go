@@ -1,4 +1,5 @@
 # leetcode-to-anki-go
+leetcode.com/problem-x 👉 SingleFile.html 👉 ANKI deck
 
 Transform your solved LeetCode problems into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**.
 
