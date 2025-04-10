@@ -5,9 +5,9 @@
 |:-----:|:-------:|:------:|
 | **leetcode.com/problem-x** | **SingleFile.html** | **anki_deck.apkg** |
 
-Transform your LeetCode solutions into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**.
+Export your LeetCode solutions into personalized Anki flashcards, deliberately designed to reinforce **your unique problem-solving approaches**.
 
-By converting HTML pages of solved problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
+By exporting HTMLs of solved problems into structured flashcards with the problem on the front and *your specific solution* on the back, you create a personalized learning system that strengthens your distinctive problem-solving style.
 
 <img width="1180" alt="SCR-20250402-uanu" src="https://github.com/user-attachments/assets/98cb99f3-a584-4048-9aab-7f1418fc1b57" />
 
